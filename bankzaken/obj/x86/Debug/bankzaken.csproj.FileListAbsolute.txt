@@ -1,0 +1,9 @@
+C:\visualstudio\bankzaken\bankzaken\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\visualstudio\bankzaken\bankzaken\obj\x86\Debug\bankzaken.BankrekeningForm.resources
+C:\visualstudio\bankzaken\bankzaken\obj\x86\Debug\bankzaken.Properties.Resources.resources
+C:\visualstudio\bankzaken\bankzaken\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\visualstudio\bankzaken\bankzaken\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\visualstudio\bankzaken\bankzaken\bin\Debug\bankzaken.exe
+C:\visualstudio\bankzaken\bankzaken\bin\Debug\bankzaken.pdb
+C:\visualstudio\bankzaken\bankzaken\obj\x86\Debug\bankzaken.exe
+C:\visualstudio\bankzaken\bankzaken\obj\x86\Debug\bankzaken.pdb
