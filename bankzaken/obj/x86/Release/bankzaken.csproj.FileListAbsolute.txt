@@ -1,0 +1,9 @@
+\\vmware-host\Shared Folders\Documents\visualstudio\bankzaken\bankzaken\bin\Release\bankzaken.exe
+\\vmware-host\Shared Folders\Documents\visualstudio\bankzaken\bankzaken\bin\Release\bankzaken.pdb
+\\vmware-host\Shared Folders\Documents\visualstudio\bankzaken\bankzaken\obj\x86\Release\ResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Documents\visualstudio\bankzaken\bankzaken\obj\x86\Release\bankzaken.BankRekeningForm.resources
+\\vmware-host\Shared Folders\Documents\visualstudio\bankzaken\bankzaken\obj\x86\Release\bankzaken.Properties.Resources.resources
+\\vmware-host\Shared Folders\Documents\visualstudio\bankzaken\bankzaken\obj\x86\Release\GenerateResource.read.1.tlog
+\\vmware-host\Shared Folders\Documents\visualstudio\bankzaken\bankzaken\obj\x86\Release\GenerateResource.write.1.tlog
+\\vmware-host\Shared Folders\Documents\visualstudio\bankzaken\bankzaken\obj\x86\Release\bankzaken.exe
+\\vmware-host\Shared Folders\Documents\visualstudio\bankzaken\bankzaken\obj\x86\Release\bankzaken.pdb

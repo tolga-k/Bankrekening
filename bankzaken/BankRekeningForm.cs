@@ -19,7 +19,7 @@ namespace bankzaken
         public BankRekeningForm()
         {   
             InitializeComponent();
-            bankrekeningLinks = new BankRekening("Jim Clermonts");
+            bankrekeningLinks = new BankRekening("Jim");
             bankrekeningRechts = new BankRekening("Shalini");
             UpdateForm();
         }
@@ -50,17 +50,29 @@ namespace bankzaken
 
         private void btLinks_Click(object sender, EventArgs e)
         {
+            bool genoegGeld;
             int overgeboektBedrag = Convert.ToInt16(tbNaam.Text);
-            bankrekeningRechts.NeemOp(overgeboektBedrag);
-            bankrekeningLinks.Stort(overgeboektBedrag);
+
+            genoegGeld = bankrekeningLinks.MaakOverNaar(bankrekeningRechts, overgeboektBedrag);
+            if (genoegGeld == true)
+            { MessageBox.Show("Geld storten van rechts naar links gelukt"); }
+            if (genoegGeld == false)
+            { MessageBox.Show("Niet genoeg geld op bankrekening van " + bankrekeningRechts.Naam + ""); }
+                
             UpdateForm();
         }
 
         private void btRechts_Click(object sender, EventArgs e)
         {
+            bool genoegGeld;
             int overgeboektBedrag = Convert.ToInt16(tbNaam.Text);
-            bankrekeningLinks.NeemOp(overgeboektBedrag);
-            bankrekeningRechts.Stort(overgeboektBedrag);
+
+            genoegGeld = bankrekeningRechts.MaakOverNaar(bankrekeningLinks, overgeboektBedrag);
+            if (genoegGeld == true)
+            { MessageBox.Show("Geld storten gelukt"); }
+            if (genoegGeld == false)
+            { MessageBox.Show("Niet genoeg geld op bankrekening van " + bankrekeningLinks.Naam + ""); }
+
             UpdateForm();
         }
 

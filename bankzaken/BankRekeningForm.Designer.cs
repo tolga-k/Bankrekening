@@ -49,6 +49,7 @@
             // 
             this.tbsaldoLinks.Location = new System.Drawing.Point(13, 12);
             this.tbsaldoLinks.Name = "tbsaldoLinks";
+            this.tbsaldoLinks.ReadOnly = true;
             this.tbsaldoLinks.Size = new System.Drawing.Size(75, 20);
             this.tbsaldoLinks.TabIndex = 0;
             // 
@@ -164,6 +165,7 @@
             // 
             this.tbsaldoRechts.Location = new System.Drawing.Point(233, 12);
             this.tbsaldoRechts.Name = "tbsaldoRechts";
+            this.tbsaldoRechts.ReadOnly = true;
             this.tbsaldoRechts.Size = new System.Drawing.Size(75, 20);
             this.tbsaldoRechts.TabIndex = 9;
             // 

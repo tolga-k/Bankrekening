@@ -12,6 +12,9 @@ namespace bankzaken
         public BankRekening(String naam)
         {
             this.naam = naam;
+            this.rekeningnummer = VolgendVrijRekeningnummer;
+            VolgendVrijRekeningnummer++;
+            MessageBox.Show("Gegevens rekeninghouder:\n" + this.naam + "\n" + this.rekeningnummer + "\n");
         }
 
         // constructor
@@ -19,6 +22,8 @@ namespace bankzaken
         {
             this.saldo = saldo;
             this.naam = naam;
+            this.rekeningnummer = VolgendVrijRekeningnummer;
+            VolgendVrijRekeningnummer++;
         }
 
         // properties & datavelden
@@ -46,9 +51,14 @@ namespace bankzaken
         // methoden
         public void NeemOp(int bedrag)
         {
-            if (bedrag < 0 || bedrag > saldo)
+            if (bedrag < 0)
             {
-                MessageBox.Show("Not enough money or deposit value is negative");
+                MessageBox.Show("U kunt geen negatief bedrag opnemen.");
+            }
+
+            if (bedrag > this.saldo)
+            {
+                MessageBox.Show("Er is niet genoeg geld op de rekening.");
             }
             else
             {
@@ -60,7 +70,7 @@ namespace bankzaken
         {
             if (bedrag < 0)
             {
-                MessageBox.Show("You cannot deposit a negative value!");
+                MessageBox.Show("U kunt geen negatief bedrag storten.");
             }
             else
             {
@@ -70,8 +80,10 @@ namespace bankzaken
 
         public bool MaakOverNaar(BankRekening andereRekening, int bedrag) 
         {
-            if (bedrag > 0 || andereRekening.Saldo > saldo)
+            if (andereRekening.saldo > bedrag)
             {
+                this.saldo = this.saldo + bedrag;
+                andereRekening.saldo = andereRekening.saldo - bedrag;
                 return true;
             }
             else
