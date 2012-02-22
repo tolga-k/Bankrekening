@@ -54,11 +54,11 @@ namespace bankzaken
             int overgeboektBedrag = Convert.ToInt16(tbNaam.Text);
 
             genoegGeld = bankrekeningLinks.MaakOverNaar(bankrekeningRechts, overgeboektBedrag);
-            if (genoegGeld == true)
-            { MessageBox.Show("Geld storten van rechts naar links gelukt"); }
-            if (genoegGeld == false)
-            { MessageBox.Show("Niet genoeg geld op bankrekening van " + bankrekeningRechts.Naam + ""); }
-                
+            if (genoegGeld)
+                MessageBox.Show("Geld storten van rechts naar links gelukt");
+            else
+                MessageBox.Show("Niet genoeg geld op bankrekening van " + bankrekeningRechts.Naam + "");
+
             UpdateForm();
         }
 
@@ -68,11 +68,10 @@ namespace bankzaken
             int overgeboektBedrag = Convert.ToInt16(tbNaam.Text);
 
             genoegGeld = bankrekeningRechts.MaakOverNaar(bankrekeningLinks, overgeboektBedrag);
-            if (genoegGeld == true)
-            { MessageBox.Show("Geld storten gelukt"); }
-            if (genoegGeld == false)
-            { MessageBox.Show("Niet genoeg geld op bankrekening van " + bankrekeningLinks.Naam + ""); }
-
+            if (genoegGeld)
+                MessageBox.Show("Geld storten gelukt");
+            else
+                MessageBox.Show("Niet genoeg geld op bankrekening van " + bankrekeningLinks.Naam + "");
             UpdateForm();
         }
 
