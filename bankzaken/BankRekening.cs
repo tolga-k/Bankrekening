@@ -18,7 +18,7 @@ namespace bankzaken
         }
 
         // constructor
-        public BankRekening(String naam, int saldo) 
+        public BankRekening(String naam, int saldo)//dit zit FOUT! 
         {
             this.saldo = saldo;
             this.naam = naam;
